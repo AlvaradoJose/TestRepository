@@ -1,0 +1,12 @@
+<script src="./hello.js">//src traduce source lo cual es fuente, estamos diciendo cual es el archivo fuente del script</script>
+<script>
+    var setColor = function () {
+        var col = ["red", "green", "blue"];
+        var num = Math.floor(Math.random() * 3);
+        var s = `<body bgcolor= ${col[num]} >`;
+        document.write(s);
+        document.write(`<h1> ${hello()} </h1>`);//El hello() es la function importada de hello.js
+    };
+    window.onload = setColor;
+</script>
+</html>
